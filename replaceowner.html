@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MultiSign Wallet APP</title>
+  <link rel="stylesheet" href="style.css">
+  <ul class="nav-links">
+    <li><a href="/info.html">Info</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">SignerManagement</a>
+      <div class="dropdown-content">
+        <a href="/addowner.html" style="color: #494949;">Add Owner</a>
+        <a href="/removeowner.html" style="color: #494949;">Remove Owner</a>
+        <a href="/replaceowner.html" style="color: #494949;">Replace Owner</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Transaction</a>
+      <div class="dropdown-content">
+        <a href="/index.html" style="color: #494949;">Submit</a>
+        <a href="/other.html" style="color: #494949;">Others</a>
+      </div>
+    </li>
+    <li><a href="#">About</a></li>
+  </ul>
+  <div>
+    <button id="btn_connect" class="button_connect" style="vertical-align:middle"><span>Connect </span></button>
+  </div>
+
+</head>
+
+<body>
+  <div class="AAVE move4">
+    <img src="/Logo/AAVE.svg" width="128" height="128">
+  </div>
+  <div class="ARB move1">
+    <img src="/Logo/ARB.svg" width="128" height="128">
+  </div>
+  <div class="BNB move2">
+    <img src="/Logo/BNB.svg" width="128" height="128">
+  </div>
+  <div class="BTC move3">
+    <img src="/Logo/BTC.svg" width="160" height="160">
+  </div>
+  <div class="DOGE move4">
+    <img src="/Logo/DOGE.svg" width="128" height="128">
+  </div>
+  <div class="ETH move3">
+    <img src="/Logo/ETH.svg" width="180" height="180">
+  </div>
+  <div class="LINK move1">
+    <img src="/Logo/LINK.svg" width="128" height="128">
+  </div>
+  <div class="MATIC move3">
+    <img src="/Logo/MATIC.svg" width="128" height="128">
+  </div>
+  <div class="SOL move1">
+    <img src="/Logo/SOL.svg" width="128" height="128">
+  </div>
+  <div class="UNI move1">
+    <img src="/Logo/UNI.svg" width="200" height="200">
+  </div>
+  <div class="USDT move4">
+    <img src="/Logo/USDT.svg" width="128" height="128">
+  </div>
+  <div>
+    <label class="name">CoinKeeper</label>
+    <label class="name" style="top: 18%;">MultiSignWallet</label>
+  </div>
+  <div>
+    <label class="name" style="top: 92%; font-size: 48px; font-weight: 400;">Safe,Convenient,Efficient</label>
+  </div>
+  <div class="center">
+    <div>
+      <br>
+      <label for="owner" >Owner</label><br>
+      <input type="text" id="owner" name="owner" placeholder="0x..."><br><br>
+      <label for="newowner" >New Owner</label><br>
+      <input type="text" id="newowner" name="newowner" placeholder="0x..."><br>
+
+      <button id="btn_replaceowner" class="button-normal">Replace</button><br>
+
+    </div>
+
+  </div>
+  
+</body>
+
+<script src="./replaceowner.js" type="module"></script>
+
+</html>
